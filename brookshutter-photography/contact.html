@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/assets/icon.webp" type="image/x-icon" />
+    <title>Contact | Brookshutter Photography</title>
+
+    <!-- Icons & Fonts-->
+	<link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+	<!-- external CSS link -->
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <section class="alt-hero">
+            <div class="alt-overlay"></div>
+            <h1>Contact<br>Me</h1>
+        </section>
+    </header>
+    <!-- Main -->
+    <main class="main-alt">
+        <section class="contactme-info">
+            <div class="contactme-img-container">
+                <img src="/assets/dummy/pexels-hubert-nowik-1326357-5207949.jpg"/>
+            </div>
+            <div class="contact-info-container">
+                <p>Get in touch with me for all inquiries or appointments! I'd love to chat with you about the type of session you're looking for!</p>
+                <p>Feel free to reach out so we can arrange a suitable time. I book sessions in Coeur D'Alene, Post Falls, Hayden, Athol, Sandpoint, Bonners Ferry and am open to travel farther.</p>
+            </div>
+        </section>
+        <section>
+            <div class="contactme-socials">
+                <div class="socials-container">
+                    <span>Socials</span>
+                    <ul class="socials-list">
+                        <li>
+                            <a href="#"><i class='bx bxl-facebook-circle icon-color'></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class='bx bxl-instagram-alt icon-color' ></i></a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="socials-container">
+                    <span>Phone #</span>
+                    <p>(208) 400-0164</p>
+                </div>
+
+                <div class="socials-container">
+                    <span>E-mail:</span>
+                    <p>brookshutterphotography@gmail.com</p>
+                </div>
+            </div>
+            <h2 class="section-title">Let's Chat!</h2>
+            <form action="https://api.web3forms.com/submit" method="POST" id="form">
+                <!-- Replace with your Access Key -->
+                <input type="hidden" name="access_key" value="ce58c5d2-11c2-4ef3-bd4a-f91bdd3ecae7">
+                <!-- Redirect After Submit -->
+                <input type="hidden" name="redirect" value="https://brookshutterphotography.netlify.app/success#success">
+                <fieldset class="person-info">
+                    <div class="person-info-row">
+                        <div>
+                            <label for="firstN">First Name : *</label><br>
+                            <input type="text" id="firstN" name="First Name" placeholder="John" required/>
+                        </div>
+                        
+                        <div>
+                            <label for="lastN">Last Name : *</label><br>
+                            <input type="text" id="lastN" name="Last Name" placeholder="Doe" required/>
+                        </div>
+                    </div>
+                    
+                    <div class="person-info-row">
+                        <div>
+                            <label for="phone">Phone # : *</label><br>
+                            <input type="tel" id="phone" name="phone" placeholder="(123) 456- 7890" required/>
+                        </div>
+                        
+                        <div>
+                            <label for="email">E-mail : *</label><br>
+                            <input type="email" id="email" name="email" placeholder="yourmail@email.com" required/>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <fieldset class="session-info">
+
+                    <textarea name="message" placeholder="Your Message"></textarea>
+                    <select name="Session Type">
+                        <option value="" disabled selected class="hidden">Select a session type...</option>
+                        <option value="Family">Family</option>
+                        <option value="Portrait">Portrait</option>
+                        <option value="Newborn">Newborn</option>
+                        <option value="Wedding">Wedding</option>
+                        <option value="Other">Other</option>
+                    </select>
+
+                    <!-- Honeypot Spam Protection -->
+                    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                
+                    <button class="form-btn silver">Send <i class='bx bxs-right-arrow'></i></button>
+                </fieldset>
+
+                
+            </form>
+        </section>
+    </main>
+    <!-- Footer -->
+		<footer>
+			<div class="footer-content">
+				<div class="company-info">
+					<h4>Brookshutter Photography</h4>
+					<span>Rathdrum, ID</span>
+				    <span><a href="tel:+2084000164">(208) 400-0164</a></span>
+				    <span><a href="mailto:brookshutterphotography@gmail.com">brookshutterphotography@gmail.com</a></span>
+					<div class="socials">
+						<a href="https://www.facebook.com/" target="_blank"><i class='bx bxl-facebook-circle icon-color'></i></a>
+						<a href="https://www.instagram.com/" target="_blank"><i class='bx bxl-instagram-alt icon-color' ></i></a>
+					</div>
+				</div>
+				<ul>
+					<li><a href="#home">HOME</a></li>
+					<li><a href="about.html">ABOUT</a></li>
+					<li><a href="portfolio.html">PORTFOLIO</a></li>
+					<li><a href="contact.html">CONTACT</a></li>
+				</ul>
+			</div>
+			<div class="copyright">&copy 2025 Brookshutter Photography. All Rights Reserved.<br><a href="https://www.linkedin.com/in/samlopezdev/">Developed with ♥ by Samantha Lopez</a></div>
+		</footer>
+        <script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
